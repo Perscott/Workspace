@@ -13,3 +13,5 @@ RUN sed -i 's/port="8080"/port="10000"/g' /usr/local/tomcat/conf/server.xml && \
     sed -i 's/<Connector/<Connector address="0.0.0.0"/' /usr/local/tomcat/conf/server.xml
 
 EXPOSE 10000
+
+CMD ["catalina.sh", "run"]
